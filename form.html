@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Online Registration Form</h1>
+</header>
+
+<section class="content">
+    <form action="submit.php" method="POST" id="regForm">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Mobile:</label>
+        <input type="text" name="mobile" required><br><br>
+
+        <label>Course:</label>
+        <select name="course">
+            <option>B.Tech</option>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<script>
+$("#regForm").submit(function() {
+    alert("Form Submitted Successfully!");
+});
+</script>
+
+</body>
+</html>
